@@ -1,39 +1,17 @@
-## Welcome to GitHub Pages
+# [Geoinformática](https://centrogeo.github.io/curso-geoinformatica-2/)
 
-You can use the [editor on GitHub](https://github.com/CentroGeo/curso-geoinformatica-2/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Hola
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Requerimientos del Curso
+* [Transformación de los Datos](./practica_1/practica_1.html)
+* [Geovisualización](./practica_2/practica_2.html)
+* [Pesos Espaciales y Rezago Espacial](./practica_4/practica_4.html)
+* [Autocorrelación Espacial y Análisis Exploratorio de Datos](./practica_5/practica_5.html)
+* [Patrones de Puntos](./practica_7/practica_7.html)
+* [Problema de la Unidad de Área Modificable (MUAP)](./practica_extra/practica_extra.html)
 
-[Canadá es un maíz](./practica_1/index.html)
+## Organización del Curso
 
-### Markdown
+## Referencias
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CentroGeo/curso-geoinformatica-2/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
