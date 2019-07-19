@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/CentroGeo/curso-geoinforma
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-[Canadá es un maíz](./practica_1/index.html)
+[Canadá es un maíz](./practica_1/practica_1.html)
 
 ### Markdown
 
