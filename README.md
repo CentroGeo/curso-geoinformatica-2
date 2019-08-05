@@ -10,7 +10,7 @@ Los temas elegidos fueron escogidos a modo de brindar a los estudiantes de un ca
 El curso se encuentra organizado como un conjunto de prácticas, cada una puntualizando en algún aspecto en particular del Análisis Espacial, así como introduciendo las librerías de *Python* que permiten ejecutar dicho análisis. Cada práctica contiene algo de teoría que explica el tema a desarrollar, las líneas de código que permiten desarrollarla y la explicación detrás de cada uno de los comandos.
 
 Las primeras prácticas pretenden ser simplemente una introducción a la visualización, interpretación y manipulación de los Datos Espaciales:
-* [Transformación de los Datos](./practica_1/practica_1.html)
+* [Transformación de los Datos](./01_transformacion/01_transformacion.html)
 * [Geovisualización](./practica_2/practica_2.html)
 
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
@@ -63,3 +63,4 @@ jupyter-notebook
 
 ## Referencias
 * Algunas prácticas fueron adaptadas del curso impartido por el [Dr. Dani Arribas](http://darribas.org/), docente de la Universidad de Liverpool, durante la segunda mitad del 2016, el cual puede ser encontrado [en su página oficial](http://darribas.org/gds16/).
+* El libro *Python for Data Analysis: Data Wrangling with Pandas, NumPy and IPython* del autor William McKinney es una excelente introducción al manejo de datos en Python, ofreciendo múltiples ejemplos y comandos útiles ([Información](http://shop.oreilly.com/product/0636920023784.do))
