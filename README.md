@@ -19,7 +19,7 @@ El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis E
 * [Patrones de Puntos](./07_patrones/07_patrones.html)
 
 Posteriormente, se analizan problemáticas asociadas al Análisis Espacial, especficamente, particularidades a tomar en cuenta al manejar información espacial:
-* [Problema de la Unidad de Área Modificable (MUAP)](./practica_extra/practica_extra.html)
+* [Problema de la Unidad de Área Modificable (MUAP)](./08_muap/08_muap.html)
 
 ## Preparación para el Curso
 En primer lugar, es necesario tener una computadora actualizada con la versión más reciente de Python. Para el caso de Windows y MacOS, puede ser descargada a través de la [página oficial de *Python*](https://www.python.org/downloads/); en el caso de Linux, basta con correr en la terminal el siguiente comando:

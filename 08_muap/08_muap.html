@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>practica_extra</title>
+<title>08_muap</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13116,8 +13116,8 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Geoinform&#225;tica---Pr&#225;ctica-Adicional">Geoinform&#225;tica - Pr&#225;ctica Adicional<a class="anchor-link" href="#Geoinform&#225;tica---Pr&#225;ctica-Adicional">&#182;</a></h1><h2 id="Problema-de-la-Unidad-de-&#193;rea-Modificable-(MUAP)">Problema de la Unidad de &#193;rea Modificable (MUAP)<a class="anchor-link" href="#Problema-de-la-Unidad-de-&#193;rea-Modificable-(MUAP)">&#182;</a></h2><h2 id="Parte-I">Parte I<a class="anchor-link" href="#Parte-I">&#182;</a></h2><p>En esta práctica vamos a explorar la forma en la agregación delos datos influye en los resultados de un análisis. Para esto vamos a trabajar con los datos de desaparecidos en la República Mexicana entre 2006 y 2014.</p>
-<p>Los datos vienen en dos <em>shapefiles</em>, uno a nivel estatal y otro a nivel municipal. Importemos los archivos en GeoPandas para analizarlos:</p>
+<h1 id="Geoinform&#225;tica---Pr&#225;ctica-8">Geoinform&#225;tica - Pr&#225;ctica 8<a class="anchor-link" href="#Geoinform&#225;tica---Pr&#225;ctica-8">&#182;</a></h1><h2 id="Problema-de-la-Unidad-de-&#193;rea-Modificable-(MUAP)">Problema de la Unidad de &#193;rea Modificable (MUAP)<a class="anchor-link" href="#Problema-de-la-Unidad-de-&#193;rea-Modificable-(MUAP)">&#182;</a></h2><h2 id="Parte-I">Parte I<a class="anchor-link" href="#Parte-I">&#182;</a></h2><p>En esta práctica vamos a explorar la forma en la que agregación de los datos influye en los resultados de un análisis. Para esto vamos a trabajar con los datos de desaparecidos en la República Mexicana entre 2006 y 2014.</p>
+<p>Los datos vienen en dos <em>ShapeFiles</em>, uno a nivel estatal y otro a nivel municipal. Importemos los archivos con <code>GeoPandas</code> para analizarlos:</p>
 
 </div>
 </div>
@@ -13338,7 +13338,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Debido a que estos datos poseen 22 columnas, no es posible verlos todos de forma sencilla; como tal, vamos a listar las columnas para ver qué datos se tienen:</p>
+<p>Debido a que estos datos poseen 22 columnas, no es posible verlos sencillamente; como tal, vamos a listar las columnas para ver qué datos se tienen:</p>
 
 </div>
 </div>
@@ -13401,7 +13401,7 @@ memory usage: 5.1+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En las columnas 2006-2014 tenemos los datos de desaparecidos para cada año. En las demás columnas tenemos alguna información sobre las condiciones socioeconómicas de cada unidad espacial:</p>
+<p>En las columnas 2006 a 2014 tenemos los datos de desaparecidos para cada año. En las demás columnas tenemos alguna información sobre las condiciones socioeconómicas de cada Unidad Espacial:</p>
 <ul>
 <li><em>pob_alimen</em> - Porcentaje de la Población en Pobreza Alimentaria</li>
 <li><em>pob_capaci</em> - Porcentaje de la Población en Pobreza de Capacidades</li>
@@ -13681,8 +13681,8 @@ memory usage: 421.9+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En el primer ejercicio, vamos a realizar una Regresión Lineal del Total de Desaparecidos (sobre todos los años), contra alguna variable socioeconómica para observar cómo cambia el resultado con la escala del análisis.</p>
-<p>El primer paso es crear y calcular una columna con el total de desaparecidos; para esto, primero se aislan en un <code>DataFrame</code> nuevo las columnas que nos interesan:</p>
+<p>En el primer ejercicio, vamos a realizar una Regresión Lineal del Total de Desaparecidos (sobre cada uno de los años), contra alguna variable socioeconómica para observar cómo cambia el resultado con la escala del análisis.</p>
+<p>El primer paso es crear y calcular una columna con el Total de Desaparecidos; para esto, primero se aislan en un <code>DataFrame</code> nuevo las columnas que nos interesan:</p>
 
 </div>
 </div>
@@ -13849,11 +13849,11 @@ memory usage: 421.9+ KB
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\JuanCarlos\Miniconda3\envs\dash\lib\site-packages\ipykernel_launcher.py:1: SettingWithCopyWarning: 
+<pre>/home/datalab/miniconda3/envs/geoinf/lib/python3.7/site-packages/ipykernel_launcher.py:1: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   &#34;&#34;&#34;Entry point for launching an IPython kernel.
 </pre>
 </div>
@@ -13993,7 +13993,8 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="n">estatal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">estatal</span><span class="p">,</span><span class="n">des_estado</span><span class="p">[[</span><span class="s1">&#39;total_des&#39;</span><span class="p">,</span><span class="s1">&#39;cvegeo&#39;</span><span class="p">]],</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;cvegeo&#39;</span> <span class="p">)</span>
+
+<span class="n">estatal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">estatal</span><span class="p">,</span> <span class="n">des_estado</span><span class="p">[[</span><span class="s1">&#39;total_des&#39;</span><span class="p">,</span><span class="s1">&#39;cvegeo&#39;</span><span class="p">]]</span> <span class="p">,</span> <span class="n">on</span> <span class="o">=</span> <span class="s1">&#39;cvegeo&#39;</span> <span class="p">)</span>
 <span class="n">estatal</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -14206,7 +14207,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <span class="n">des_mun</span><span class="p">[</span><span class="s1">&#39;total_des&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">des_mun</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="c1"># Generar la unión de la nueva columna a los datos originales</span>
-<span class="n">municipal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">municipal</span><span class="p">,</span><span class="n">des_mun</span><span class="p">[[</span><span class="s1">&#39;total_des&#39;</span><span class="p">,</span><span class="s1">&#39;cvegeo_x&#39;</span><span class="p">]],</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;cvegeo_x&#39;</span> <span class="p">)</span>
+<span class="n">municipal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">municipal</span><span class="p">,</span> <span class="n">des_mun</span><span class="p">[[</span><span class="s1">&#39;total_des&#39;</span><span class="p">,</span><span class="s1">&#39;cvegeo_x&#39;</span><span class="p">]]</span> <span class="p">,</span> <span class="n">on</span> <span class="o">=</span> <span class="s1">&#39;cvegeo_x&#39;</span> <span class="p">)</span>
 
 <span class="c1"># Analizar los datos para verificar el proceso</span>
 <span class="n">municipal</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14226,11 +14227,11 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\JuanCarlos\Miniconda3\envs\dash\lib\site-packages\ipykernel_launcher.py:5: SettingWithCopyWarning: 
+<pre>/home/datalab/miniconda3/envs/geoinf/lib/python3.7/site-packages/ipykernel_launcher.py:5: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
-See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
   &#34;&#34;&#34;
 </pre>
 </div>
@@ -14420,7 +14421,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Para empezar, podemos suponer que la cantidad de desaparecidad puede estar correlacionada con la cantidad de habitantes de una zona. Probemos modelar esto a nivel estatal con una Regresión Lineal Simple, utilizando la librería <code>statsmodels</code> para esto:</p>
+<p>Para empezar, podemos suponer que la cantidad de desaparecidos puede estar correlacionada con la cantidad de habitantes de una zona. Probemos modelar esto a nivel estatal con una Regresión Lineal Simple, utilizando la librería <code>statsmodels</code> para esto:</p>
 
 </div>
 </div>
@@ -14470,10 +14471,10 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   3.043</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th>  <td>0.0913</td> 
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th>  <td>0.0913</td> 
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:28</td>     <th>  Log-Likelihood:    </th> <td> -263.53</td>
+  <th>Time:</th>                 <td>17:14:13</td>     <th>  Log-Likelihood:    </th> <td> -263.53</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>    32</td>      <th>  AIC:               </th> <td>   531.1</td>
@@ -14576,10 +14577,10 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   1379.</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th> <td>7.32e-240</td>
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th> <td>7.32e-240</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:28</td>     <th>  Log-Likelihood:    </th> <td> -12613.</td> 
+  <th>Time:</th>                 <td>17:14:13</td>     <th>  Log-Likelihood:    </th> <td> -12613.</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>  2454</td>      <th>  AIC:               </th> <td>2.523e+04</td>
@@ -14630,9 +14631,9 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En este caso, no sólo el coeficiente de <code>POB1</code> se vuelve mucho más significativo, siéndolo al 1%, sino también que el valor del estadístico $R^2$, indicando que esta relación, modelada a nivel municipal, explica mucho más que al momento de modelarla a nivel estatal.</p>
+<p>En este caso, no sólo el coeficiente de <code>POB1</code> se vuelve mucho más significativo, siéndolo al 1%, sino también el valor del estadístico $R^2$, indica que esta relación, modelada a nivel municipal, explica mucho más que al momento de modelarla a nivel estatal.</p>
 <hr>
-<h3 id="Ejercicio">Ejercicio<a class="anchor-link" href="#Ejercicio">&#182;</a></h3><p>Realcen múltiples regresiones, utilizando diferentes variables que consideren puedan axplicar la cantidad de desaparecidos. Comparen los resultados a nivel Estatal y Municipal</p>
+<h3 id="Ejercicio">Ejercicio<a class="anchor-link" href="#Ejercicio">&#182;</a></h3><p>Realicen múltiples regresiones, utilizando diferentes variables que consideren puedan explicar la cantidad de desaparecidos. Comparen los resultados a nivel Estatal y Municipal</p>
 <hr>
 <p>También podemos pensar en modelos un poco más complicaos; por ejemplo, las Regresiones Multivariadas. En un primer experimento, podemos modelar la cantidad de desaparecidos a partir de la Población Total y el Índice de Rezago. Realizando esto a nivel estatal:</p>
 
@@ -14676,10 +14677,10 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   1.503</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th>  <td> 0.239</td> 
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th>  <td> 0.239</td> 
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:28</td>     <th>  Log-Likelihood:    </th> <td> -263.50</td>
+  <th>Time:</th>                 <td>17:14:13</td>     <th>  Log-Likelihood:    </th> <td> -263.50</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>    32</td>      <th>  AIC:               </th> <td>   533.0</td>
@@ -14733,8 +14734,8 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Es posible observar que, entre las advertencias arrojadas por <code>statsmodels</code>, éste nos avisa que existe un <a href="https://en.wikipedia.org/wiki/Condition_number">Número de Condición</a> demasiado grande, lo cual puede relacionarse a un problema de multicolinariedad entre las variables; esto es, algunas de nuestras variables se encuentran muy correlacionada y, por lo tanto, no deberían de utilizarse juntas en este modelo.</p>
-<p>Para determinar si éste es el caso, podemos examinar la Matriz de Correlación de la variables; en particular, los <em>eigenvalores</em> de la misma, para verificar si tenemos multicolinariedad:</p>
+<p>Es posible observar que, entre las advertencias arrojadas por <code>statsmodels</code>, se nos avisa que existe un <a href="https://en.wikipedia.org/wiki/Condition_number">Número de Condición</a> demasiado grande, lo cual puede relacionarse a un problema de <em>Multicolinealidad</em> entre las variables; esto es, algunas de nuestras variables se encuentran muy correlacionadas y, por lo tanto, no deberían de utilizarse juntas en este modelo.</p>
+<p>Para determinar si éste es el caso, podemos examinar la Matriz de Correlación de la variables; en particular, los <em>eigenvalores</em> de la misma, para verificar si tenemos <em>Multicolinealidad</em>:</p>
 
 </div>
 </div>
@@ -14785,9 +14786,9 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Lo que hicimos aquí fue importar la librería <code>numpy</code> que incluye métodos de Álgebra Línal; después, calculamos la Matriz de Correlación a través de <code>pandas</code> y, finalmente, calculamos los <em>eigenvalores</em> de dicha matriz.</p>
-<p>Debido a que ninguno de los <em>eigenvalores</em> es cercano a cero, podemos concluir que no tenemos el problema de Multicolineraridad y, por lo tanto, la advertencia de un Número de Condión grande se debe a problemas numéricos</p>
-<p>En este caso, podemos pensar que estos problemas se derivan del hecho de que la variable <code>POB1</code> tiene valores mucho más grandes que las demás. Para resolver este problema, intentemos reescalar las variables:</p>
+<p>Lo que hicimos aquí fue importar la librería <code>numpy</code> que incluye métodos de Álgebra Líneal; después, calculamos la Matriz de Correlación a través de <code>pandas</code> y, finalmente, calculamos los <em>eigenvalores</em> de dicha matriz.</p>
+<p>Debido a que ninguno de los <em>eigenvalores</em> es cercano a cero, podemos concluir que no tenemos problemas de multicolinealidad y, por lo tanto, la advertencia de un Número de Condición grande se debe a problemas numéricos</p>
+<p>En este caso, podemos pensar que estos problemas se derivan del hecho de que la variable <code>POB1</code> posee valores mucho más grandes que el resto. Para resolver este problema, intentemos reescalar las variables:</p>
 
 </div>
 </div>
@@ -14911,7 +14912,7 @@ See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stabl
 <p>Lo que hicimos aquí fue reescalar los valores de nuestras variables utilizando la fórmula:</p>
 $$
 z_i = \dfrac{y - \bar{y}}{\sigma_y}
-$$<p>Donde $z_i$ es la versión estandarizada de nuestr avariable, $\bar{y}$ es el promedio de la misma y $\sigma$ su desviación estándar; esto consigue que la media se encuentre centrada en cero, y lo que cuantificamos es la desviación de esta media con respecto al rengo.</p>
+$$<p>Donde $z_i$ es la versión estandarizada de nuestra variable, $\bar{y}$ es el promedio de la misma y $\sigma$ su desviación estándar; esto consigue que la media se encuentre centrada en cero, y lo que cuantificamos es la desviación de esta media con respecto al rango.</p>
 <p>Ahora, veamos si esta transformación de datos nos ayuda a resolver el problema del Número de Condición:</p>
 
 </div>
@@ -14954,10 +14955,10 @@ $$<p>Donde $z_i$ es la versión estandarizada de nuestr avariable, $\bar{y}$ es 
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   1.503</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th>  <td> 0.239</td> 
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th>  <td> 0.239</td> 
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:29</td>     <th>  Log-Likelihood:    </th> <td> -43.320</td>
+  <th>Time:</th>                 <td>17:14:13</td>     <th>  Log-Likelihood:    </th> <td> -43.320</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>    32</td>      <th>  AIC:               </th> <td>   92.64</td>
@@ -14977,7 +14978,7 @@ $$<p>Donde $z_i$ es la versión estandarizada de nuestr avariable, $\bar{y}$ es 
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>Intercept</th> <td>-6.939e-18</td> <td>    0.174</td> <td>-3.99e-17</td> <td> 1.000</td> <td>   -0.356</td> <td>    0.356</td>
+  <th>Intercept</th> <td> 2.776e-17</td> <td>    0.174</td> <td>  1.6e-16</td> <td> 1.000</td> <td>   -0.356</td> <td>    0.356</td>
 </tr>
 <tr>
   <th>POB1</th>      <td>    0.3126</td> <td>    0.181</td> <td>    1.730</td> <td> 0.094</td> <td>   -0.057</td> <td>    0.682</td>
@@ -15065,10 +15066,10 @@ $$<p>Donde $z_i$ es la versión estandarizada de nuestr avariable, $\bar{y}$ es 
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   691.8</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th> <td>6.31e-239</td>
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th> <td>6.31e-239</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:29</td>     <th>  Log-Likelihood:    </th> <td> -2932.4</td> 
+  <th>Time:</th>                 <td>17:14:13</td>     <th>  Log-Likelihood:    </th> <td> -2932.4</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>  2454</td>      <th>  AIC:               </th> <td>   5871.</td> 
@@ -15088,7 +15089,7 @@ $$<p>Donde $z_i$ es la versión estandarizada de nuestr avariable, $\bar{y}$ es 
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>Intercept</th> <td> 1.995e-17</td> <td>    0.016</td> <td> 1.24e-15</td> <td> 1.000</td> <td>   -0.032</td> <td>    0.032</td>
+  <th>Intercept</th> <td>-6.494e-17</td> <td>    0.016</td> <td>-4.02e-15</td> <td> 1.000</td> <td>   -0.032</td> <td>    0.032</td>
 </tr>
 <tr>
   <th>POB1</th>      <td>    0.5909</td> <td>    0.017</td> <td>   34.986</td> <td> 0.000</td> <td>    0.558</td> <td>    0.624</td>
@@ -15122,7 +15123,7 @@ $$<p>Donde $z_i$ es la versión estandarizada de nuestr avariable, $\bar{y}$ es 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En estos modelos de Regresión Lineal Multivariada, estamos observando que, mientras a Nivel Estatal el valor de $R^2$ es de 0.094, indicando que se explica menos del 10% del fenómeno, en el caso municpal es de 0.36, ¡un orden de magnitud más grande! Además, la influencia del Índice de Rezago (valor de su coeficiente) es un orden de magnitud menos para el caso municipal que para el caso estatal.</p>
+<p>En estos modelos de Regresión Lineal Multivariada, estamos observando que, mientras a Nivel Estatal el valor de $R^2$ es de 0.031, indicando que se explica menos del 5% del fenómeno, en el caso municpal es de 0.36, ¡un orden de magnitud más grande! Además, la significancia del Índice de Rezago (valor de su coeficiente) es mucho mayor para el caso municipal a comparación del caso estatal.</p>
 <p>¿Qué quiere decir esto? ¿Cuál es la verdadera influencia del Índice de Rezago en la cantidad de desaparecidos?</p>
 <hr>
 <h3 id="Ejercicio">Ejercicio<a class="anchor-link" href="#Ejercicio">&#182;</a></h3><p>Uilicen diferentes combinaciones de las variables disponibles para tratar de explicar mejor el Total de Desaparecidos. Repitan sus ejercicios a Nivel Estatal y Municipal; recuerden que es necesario reescalar los datos.</p>
@@ -15175,7 +15176,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Aunque la sintaxis es un poco extraña, lo que estamos haciendo es realmente sencillo: a la columna <code>total_des</code> de los datos originales está siendo dividida por la columna <code>POB1</code>, <em>elemento por elemento</em>.</p>
+<p>Aunque la sintaxis es un poco extraña, lo que estamos haciendo es realmente sencillo: la columna <code>total_des</code> de los datos originales está siendo dividida por la columna <code>POB1</code>, <em>elemento por elemento</em>.</p>
 <p>Es importante resaltar que el resultado no es un <code>DataFrame</code>, sino un objeto del tipo <code>Series</code>, que resulta ser más simple en términos de que sólo tiene una columna y un índice. Para poder unir el resultado a los datos originales, necesitamos convertir el objeto <code>Series</code> a un <code>DataFrame</code>, y proceder de la misma forma que se hizo con el Total de Desaparecidos, esto es, utilizar la función <code>.merge()</code>:</p>
 
 </div>
@@ -15190,7 +15191,6 @@ dtype: float64</pre>
 <span class="n">tasa_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">tasa</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tasa&#39;</span><span class="p">])</span>
 
 <span class="c1"># Realizar la unión a través de .merge() y utilizando los índices</span>
-
 <span class="n">estatal</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">estatal</span><span class="p">,</span><span class="n">tasa_df</span><span class="p">,</span><span class="n">left_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">right_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="c1"># Verificar el proceso</span>
@@ -15576,10 +15576,10 @@ dtype: float64</pre>
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>0.006383</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th>  <td> 0.994</td> 
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th>  <td> 0.994</td> 
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:31</td>     <th>  Log-Likelihood:    </th> <td> -44.891</td>
+  <th>Time:</th>                 <td>17:14:14</td>     <th>  Log-Likelihood:    </th> <td> -44.891</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>    32</td>      <th>  AIC:               </th> <td>   95.78</td>
@@ -15599,7 +15599,7 @@ dtype: float64</pre>
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>Intercept</th> <td>-1.006e-16</td> <td>    0.183</td> <td>-5.51e-16</td> <td> 1.000</td> <td>   -0.374</td> <td>    0.374</td>
+  <th>Intercept</th> <td>-1.249e-16</td> <td>    0.183</td> <td>-6.84e-16</td> <td> 1.000</td> <td>   -0.374</td> <td>    0.374</td>
 </tr>
 <tr>
   <th>POB1</th>      <td>   -0.0210</td> <td>    0.190</td> <td>   -0.111</td> <td> 0.912</td> <td>   -0.409</td> <td>    0.367</td>
@@ -15682,10 +15682,10 @@ dtype: float64</pre>
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   56.87</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th> <td>7.18e-25</td>
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th> <td>7.18e-25</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:31</td>     <th>  Log-Likelihood:    </th> <td> -3425.9</td>
+  <th>Time:</th>                 <td>17:14:14</td>     <th>  Log-Likelihood:    </th> <td> -3425.9</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>  2454</td>      <th>  AIC:               </th> <td>   6858.</td>
@@ -15705,7 +15705,7 @@ dtype: float64</pre>
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>Intercept</th> <td> 1.093e-16</td> <td>    0.020</td> <td> 5.54e-15</td> <td> 1.000</td> <td>   -0.039</td> <td>    0.039</td>
+  <th>Intercept</th> <td>-4.992e-17</td> <td>    0.020</td> <td>-2.53e-15</td> <td> 1.000</td> <td>   -0.039</td> <td>    0.039</td>
 </tr>
 <tr>
   <th>POB1</th>      <td>    0.0062</td> <td>    0.021</td> <td>    0.298</td> <td> 0.766</td> <td>   -0.034</td> <td>    0.047</td>
@@ -15744,7 +15744,7 @@ dtype: float64</pre>
 <h3 id="Ejercicio">Ejercicio<a class="anchor-link" href="#Ejercicio">&#182;</a></h3><p>Planteen un modelo usando las variables disponibles que explique mejor las Tasas de Desaparecidos. Al igual que en el ejercicio anterior, repitan el análisis para ambas escalas.</p>
 <hr>
 <h2 id="Parte-II---Efecto-de-Agregaci&#243;n">Parte II - Efecto de Agregaci&#243;n<a class="anchor-link" href="#Parte-II---Efecto-de-Agregaci&#243;n">&#182;</a></h2><p>En la primera parte de la práctica, vimos cómo la Escala de Análisis tiene influencia sobre los resultados del mismo. En esta segunda parte vamos a estudiar cómo diferentes formas de agregar los datos, en una misma escala, también puede tener influencia sobre los resultados del análisis.</p>
-<p>En esta segunda parte, se trabajará con los datos de mezcla de Usos de Suelo en la Ciudad de México, y se estimará su efecto en la Generación de Viajes. Los datos de Uso de Suelo están calculados a partir del DENUE, mientras que la información sobre los viajes proviene de la <em>Encuesta Origen-Destino 2007</em> de INEGI, por lo que la Escala de Análisis serán los Distritos de Tráfico de dicha encuesta.</p>
+<p>En esta segunda parte, se trabajará con los datos de mezcla de Usos de Suelo de la Ciudad de México, y se estimará su efecto en la Generación de Viajes. Los datos de Uso de Suelo están calculados a partir del DENUE, mientras que la información sobre los viajes proviene de la <em>Encuesta Origen-Destino 2007</em> de INEGI, por lo que la Escala de Análisis serán los Distritos de Tráfico de dicha encuesta.</p>
 <p>Como siempre, el primer paso es leer y revisar los datos:</p>
 
 </div>
@@ -15950,8 +15950,8 @@ $$<p>Donde $p_j$ representa la proporción del $j-ésimo$ Uso de Suelo con respe
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\JuanCarlos\Miniconda3\envs\dash\lib\site-packages\ipykernel_launcher.py:15: RuntimeWarning: divide by zero encountered in log
-  from ipykernel import kernelapp as app
+<pre>/home/datalab/miniconda3/envs/geoinf/lib/python3.7/site-packages/pandas/core/series.py:853: RuntimeWarning: divide by zero encountered in log
+  result = getattr(ufunc, method)(*inputs, **kwargs)
 </pre>
 </div>
 </div>
@@ -15981,7 +15981,7 @@ dtype: float64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Lo que hicimos para calcular el <em>Entropía</em> es relativamente sencillo; primero, creamos la variable <code>intensidad</code>, que es la suma de todos los Usos de Suelo; luego, fuimos calculando cada una de las proporciones asociadas a cada uso de suelo; finalmente, sumamos estas proporciones y las dividimos por el logaritmo natial del total de Usos de Suelo en el distrito.</p>
+<p>Lo que hicimos para calcular la <em>Entropía</em> es relativamente sencillo; primero, creamos la variable <code>intensidad</code>, que es la suma de todos los Usos de Suelo; luego, fuimos calculando cada una de las proporciones asociadas a cada uso de suelo; finalmente, sumamos estas proporciones y las dividimos por el logaritmo natural del total de Usos de Suelo en el distrito.</p>
 <p>Lo que se obtiene es un objeto del tipo <code>Series</code>, que contiene los Índices de Entropía de forma ordenada; ahora, es necesario unir esta serie a los datos originales:</p>
 
 </div>
@@ -16291,7 +16291,7 @@ dtype: float64</pre>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Como pueden ver, la Entropia guarda bastante correlación con el resto de las variables, sobre todo con las de Comercio y Ocio; como tal, por lo pronto, seleccionemos únicamente Entropía y Vivienda como variables explicativas.</p>
-<p>Antes de generar el modelo, normalicemos las variables pues éstas tienen escalas de variación muy diferentes, y ya sabemos que esto puede traer problemas:</p>
+<p>Antes de generar el modelo, normalicemos las variables, pues éstas tienen escalas de variación muy diferentes, y ya sabemos que esto puede traer problemas:</p>
 
 </div>
 </div>
@@ -16418,6 +16418,7 @@ dtype: float64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">statsmodels.formula.api</span> <span class="k">as</span> <span class="nn">sm</span>
+
 <span class="n">model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">ols</span><span class="p">(</span><span class="n">formula</span><span class="o">=</span><span class="s2">&quot;entrada ~ viv + entropia&quot;</span><span class="p">,</span><span class="n">data</span><span class="o">=</span><span class="n">vars_norm</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">()</span>
 <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </pre></div>
@@ -16449,10 +16450,10 @@ dtype: float64</pre>
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   20.35</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th> <td>1.47e-08</td>
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th> <td>1.47e-08</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:32</td>     <th>  Log-Likelihood:    </th> <td> -200.88</td>
+  <th>Time:</th>                 <td>17:14:15</td>     <th>  Log-Likelihood:    </th> <td> -200.88</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   155</td>      <th>  AIC:               </th> <td>   407.8</td>
@@ -16509,7 +16510,7 @@ dtype: float64</pre>
 <hr>
 <h3 id="Ejercicio">Ejercicio<a class="anchor-link" href="#Ejercicio">&#182;</a></h3><p>Especifiquen diferentes modelos para tratar de explicar cada una de las tres variables de viajes en los distritos.</p>
 <hr>
-<h3 id="Cambiando-de-Escala">Cambiando de Escala<a class="anchor-link" href="#Cambiando-de-Escala">&#182;</a></h3><p>Ahora, vamos a cambiar de escala de análisis, agregando los distritos en unidades más grandes. Para esto, puede utilizarse una biblioteca de Python llamada<code>clusterpy</code>, la cual ayuda a agenerar regionalizaciones al azar a partir de los datos; sin embargo, ésta librería únicamente es soportada en las versiones de Python 2.X, y descontinuada para las versiones más recientes de Python 3.X.</p>
+<h3 id="Cambiando-de-Escala">Cambiando de Escala<a class="anchor-link" href="#Cambiando-de-Escala">&#182;</a></h3><p>Ahora, vamos a cambiar de escala de análisis, agregando los distritos en unidades más grandes. Para esto, puede utilizarse una biblioteca de Python llamada<code>clusterpy</code>, la cual ayuda a generar regionalizaciones al azar a partir de los datos; sin embargo, esta librería únicamente es soportada en las versiones de Python 2.X, y descontinuada para las versiones más recientes de Python 3.X.</p>
 <p>Como tal, únicamente se importará un ejemplo del resultado de esta librería, la cual ya se encuentra presete en los datos de trabajo:</p>
 
 </div>
@@ -16574,7 +16575,7 @@ viv            156 non-null float64
 random_2016    156 non-null float64
 geometry       156 non-null object
 dtypes: float64(10), object(2)
-memory usage: 14.7+ KB
+memory usage: 14.8+ KB
 </pre>
 </div>
 </div>
@@ -16917,7 +16918,7 @@ memory usage: 14.7+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Aquí simplemente agrupamos los datos según la columna <code>id_region</code>, y calculamos la suma de las variables sobre cada grupo; el único problema es que la Entropía permanece calculada como la suma de entropias individuales, lo cual no es de utilidad. Como tal, es necesario volver a calcular el Índice de Entropia:</p>
+<p>Aquí simplemente agrupamos los datos según la columna <code>id_region</code>, y calculamos la suma de las variables sobre cada grupo; el único problema es que la Entropía permanece calculada como la suma de las entropias individuales, lo cual no es de utilidad. Como tal, es necesario volver a calcular el Índice de Entropia:</p>
 
 </div>
 </div>
@@ -17142,10 +17143,10 @@ memory usage: 14.7+ KB
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   41.66</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th> <td>3.90e-11</td>
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th> <td>3.90e-11</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:33</td>     <th>  Log-Likelihood:    </th> <td> -44.944</td>
+  <th>Time:</th>                 <td>17:14:16</td>     <th>  Log-Likelihood:    </th> <td> -44.944</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>    50</td>      <th>  AIC:               </th> <td>   95.89</td>
@@ -17165,7 +17166,7 @@ memory usage: 14.7+ KB
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>Intercept</th> <td>-1.735e-17</td> <td>    0.087</td> <td>   -2e-16</td> <td> 1.000</td> <td>   -0.174</td> <td>    0.174</td>
+  <th>Intercept</th> <td> 1.388e-17</td> <td>    0.087</td> <td>  1.6e-16</td> <td> 1.000</td> <td>   -0.174</td> <td>    0.174</td>
 </tr>
 <tr>
   <th>viv</th>       <td>    0.7900</td> <td>    0.088</td> <td>    8.954</td> <td> 0.000</td> <td>    0.613</td> <td>    0.968</td>
@@ -17258,25 +17259,25 @@ memory usage: 14.7+ KB
 <table class="simpletable">
 <caption>OLS Regression Results</caption>
 <tr>
-  <th>Dep. Variable:</th>         <td>entrada</td>     <th>  R-squared:         </th> <td>   0.834</td>
+  <th>Dep. Variable:</th>         <td>entrada</td>     <th>  R-squared:         </th> <td>   0.740</td>
 </tr>
 <tr>
-  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared:    </th> <td>   0.827</td>
+  <th>Model:</th>                   <td>OLS</td>       <th>  Adj. R-squared:    </th> <td>   0.729</td>
 </tr>
 <tr>
-  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   108.4</td>
+  <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   64.16</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th> <td>1.61e-17</td>
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th> <td>6.65e-14</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:33</td>     <th>  Log-Likelihood:    </th> <td> -23.398</td>
+  <th>Time:</th>                 <td>17:14:16</td>     <th>  Log-Likelihood:    </th> <td> -35.240</td>
 </tr>
 <tr>
-  <th>No. Observations:</th>      <td>    46</td>      <th>  AIC:               </th> <td>   52.80</td>
+  <th>No. Observations:</th>      <td>    48</td>      <th>  AIC:               </th> <td>   76.48</td>
 </tr>
 <tr>
-  <th>Df Residuals:</th>          <td>    43</td>      <th>  BIC:               </th> <td>   58.28</td>
+  <th>Df Residuals:</th>          <td>    45</td>      <th>  BIC:               </th> <td>   82.09</td>
 </tr>
 <tr>
   <th>Df Model:</th>              <td>     2</td>      <th>                     </th>     <td> </td>   
@@ -17290,27 +17291,27 @@ memory usage: 14.7+ KB
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>Intercept</th> <td>-4.857e-17</td> <td>    0.061</td> <td>-7.92e-16</td> <td> 1.000</td> <td>   -0.124</td> <td>    0.124</td>
+  <th>Intercept</th> <td> 9.021e-17</td> <td>    0.075</td> <td>  1.2e-15</td> <td> 1.000</td> <td>   -0.151</td> <td>    0.151</td>
 </tr>
 <tr>
-  <th>viv</th>       <td>    0.8931</td> <td>    0.062</td> <td>   14.377</td> <td> 0.000</td> <td>    0.768</td> <td>    1.018</td>
+  <th>viv</th>       <td>    0.8352</td> <td>    0.078</td> <td>   10.713</td> <td> 0.000</td> <td>    0.678</td> <td>    0.992</td>
 </tr>
 <tr>
-  <th>entropia</th>  <td>   -0.2402</td> <td>    0.062</td> <td>   -3.867</td> <td> 0.000</td> <td>   -0.365</td> <td>   -0.115</td>
+  <th>entropia</th>  <td>   -0.4680</td> <td>    0.078</td> <td>   -6.002</td> <td> 0.000</td> <td>   -0.625</td> <td>   -0.311</td>
 </tr>
 </table>
 <table class="simpletable">
 <tr>
-  <th>Omnibus:</th>       <td> 3.846</td> <th>  Durbin-Watson:     </th> <td>   2.109</td>
+  <th>Omnibus:</th>       <td> 1.382</td> <th>  Durbin-Watson:     </th> <td>   1.663</td>
 </tr>
 <tr>
-  <th>Prob(Omnibus):</th> <td> 0.146</td> <th>  Jarque-Bera (JB):  </th> <td>   3.167</td>
+  <th>Prob(Omnibus):</th> <td> 0.501</td> <th>  Jarque-Bera (JB):  </th> <td>   0.681</td>
 </tr>
 <tr>
-  <th>Skew:</th>          <td> 0.530</td> <th>  Prob(JB):          </th> <td>   0.205</td>
+  <th>Skew:</th>          <td>-0.245</td> <th>  Prob(JB):          </th> <td>   0.712</td>
 </tr>
 <tr>
-  <th>Kurtosis:</th>      <td> 2.274</td> <th>  Cond. No.          </th> <td>    1.05</td>
+  <th>Kurtosis:</th>      <td> 3.316</td> <th>  Cond. No.          </th> <td>    1.26</td>
 </tr>
 </table><br/><br/>Warnings:<br/>[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
 </div>
@@ -17324,11 +17325,11 @@ memory usage: 14.7+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Como pueden ver, cada vez que corran la celda anterior, van a tener un resultado un poco diferente, es decir, cada modelo arroja modelos diferentes <strong>en la misma escala</strong>. En este caso, podemos pensar que no se trata de un prolbema muy grave, pues nosotros sabemos que las agregaciones son aleatorias y tenemos alguna certeza de que las desviaciones observadas en los resultados son de igual forma aleatorias.</p>
+<p>Como pueden ver, cada vez que corran la celda anterior, van a tener un resultado un poco diferente, es decir, cada modelo arroja modelos diferentes <strong>en la misma escala</strong>. En este caso, podemos pensar que no se trata de un problema muy grave, pues nosotros sabemos que las agregaciones son aleatorias y tenemos alguna certeza de que las desviaciones observadas en los resultados son de igual forma aleatorias.</p>
 <p>Sin embargo, cabe preguntar, ¿qué pasa cuando no tenemos control sobre las agregaciones?</p>
 <hr>
 <h3 id="Ejercicio">Ejercicio<a class="anchor-link" href="#Ejercicio">&#182;</a></h3><p>Encuentren un modelo que explique razonablemente bien los viajes entrantes a la escala agregada; pueden utilizar únicamente las regiones presentadas en el <code>ShapeFile</code> de nombre <code>randmo_1.shp</code>, utilizada al principio de esta sección, para no estar sujetos a la aleatoriedad de la celda anterior.</p>
-<p>A partir de este modelo, ahora sí, utilicem el proceso de la celda anterior para hacer diferentes expetimentos y registrar los parámetros más importantes, como $R^2$, los Coeficientes y las Significancias de las variables. Con los resultados de varias repeticiones treten de demostrar que las diferencias son aleatorias (es decir, siguen una Distribución Normal).</p>
+<p>A partir de este modelo, ahora sí, utilicen el proceso de la celda anterior para hacer diferentes experimentos y registrar los parámetros más importantes, como $R^2$, los Coeficientes y las Significancias de las variables. Con los resultados de varias repeticiones traten de demostrar que las diferencias son aleatorias (es decir, siguen una Distribución Normal).</p>
 <hr>
 <h3 id="Ep&#237;logo---&#191;Qu&#233;-pasa-cuando-no-tenemos-control-sobre-las-agregaciones?">Ep&#237;logo - &#191;Qu&#233; pasa cuando no tenemos control sobre las agregaciones?<a class="anchor-link" href="#Ep&#237;logo---&#191;Qu&#233;-pasa-cuando-no-tenemos-control-sobre-las-agregaciones?">&#182;</a></h3><p>Ahora, vamos a trabajar sobre tres agregaciones diferentes de los datos, en la misma escala que las hechas, pero sobre las que no tenemos control. Simplemente, son las unidades que tenemos (de forma similar a las AGEB's, por ejemplo).</p>
 <p>Lo primero es leer los nuevos datos:</p>
@@ -17512,7 +17513,7 @@ memory usage: 14.7+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Como pueden ver, son exactamente igual a los originales, salvo por las columnas nuevas <code>region_1</code>, <code>region_2</code> y <code>region_3</code>. Éstas son, justamente, las nuevas agregaciones de datos sobre las cuales nosotros no hemos tenido control; el resto de las variables son exactamente igual a las anteriores.</p>
+<p>Como pueden ver, son exactamente igual a los originales, salvo por las columnas nuevas <code>region_1</code>, <code>region_2</code> y <code>region_3</code>. Éstas son, justamente, las nuevas agregaciones de datos sobre las cuales nosotros no hemos tenido control; el resto de las variables son idénticas a las anteriores.</p>
 <p>Entonces, realicemos exactamente el mismo proceso, esta vez utilizando las nuevas regiones que nos han sido proporcionadas:</p>
 
 </div>
@@ -17556,18 +17557,6 @@ memory usage: 14.7+ KB
 
 <div class="output_area">
 
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\JuanCarlos\Miniconda3\envs\dash\lib\site-packages\ipykernel_launcher.py:12: RuntimeWarning: divide by zero encountered in log
-  if sys.path[0] == &#39;&#39;:
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
     <div class="prompt output_prompt">Out[38]:</div>
 
 
@@ -17585,10 +17574,10 @@ memory usage: 14.7+ KB
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   79.12</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th> <td>1.29e-15</td>
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th> <td>1.29e-15</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:34</td>     <th>  Log-Likelihood:    </th> <td> -32.822</td>
+  <th>Time:</th>                 <td>17:14:16</td>     <th>  Log-Likelihood:    </th> <td> -32.822</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>    49</td>      <th>  AIC:               </th> <td>   71.64</td>
@@ -17694,10 +17683,10 @@ memory usage: 14.7+ KB
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   142.8</td>
 </tr>
 <tr>
-  <th>Date:</th>             <td>Tue, 09 Jul 2019</td> <th>  Prob (F-statistic):</th> <td>1.06e-20</td>
+  <th>Date:</th>             <td>Tue, 06 Aug 2019</td> <th>  Prob (F-statistic):</th> <td>1.06e-20</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>01:29:34</td>     <th>  Log-Likelihood:    </th> <td> -21.517</td>
+  <th>Time:</th>                 <td>17:14:16</td>     <th>  Log-Likelihood:    </th> <td> -21.517</td>
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>    50</td>      <th>  AIC:               </th> <td>   49.03</td>
@@ -17717,7 +17706,7 @@ memory usage: 14.7+ KB
       <td></td>         <th>coef</th>     <th>std err</th>      <th>t</th>      <th>P>|t|</th>  <th>[0.025</th>    <th>0.975]</th>  
 </tr>
 <tr>
-  <th>Intercept</th> <td>-2.776e-17</td> <td>    0.054</td> <td>-5.11e-16</td> <td> 1.000</td> <td>   -0.109</td> <td>    0.109</td>
+  <th>Intercept</th> <td> 3.469e-18</td> <td>    0.054</td> <td> 6.39e-17</td> <td> 1.000</td> <td>   -0.109</td> <td>    0.109</td>
 </tr>
 <tr>
   <th>viv</th>       <td>    0.9402</td> <td>    0.056</td> <td>   16.889</td> <td> 0.000</td> <td>    0.828</td> <td>    1.052</td>
@@ -17751,8 +17740,8 @@ memory usage: 14.7+ KB
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Usted pueden generar ahora el Tercer Modelo.</p>
-<p>La pregunta es, ¿qué es lo que está ocurriendo? ¿Por qué se están obteniendo valosres tan diferentes a los que se tenían antes?</p>
+<p>Ustedes pueden generar ahora el Tercer Modelo.</p>
+<p>La pregunta es, ¿qué es lo que está ocurriendo? ¿Por qué se están obteniendo valores tan diferentes a los que se tenían antes?</p>
 <p><strong>Ejercicio Final</strong> - Tratar de explicar este fenómeno.</p>
 
 </div>
