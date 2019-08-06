@@ -14,7 +14,7 @@ Las primeras prácticas pretenden ser simplemente una introducción a la visuali
 * [Geovisualización](./02_geovisualizacion/02_geovisualizacion.html)
 
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
-* [Pesos Espaciales y Rezago Espacial](./practica_4/practica_4.html)
+* [Pesos Espaciales y Rezago Espacial](./04_pesosespaciales/04_pesosespaciales.html)
 * [Autocorrelación Espacial y Análisis Exploratorio de Datos](./practica_5/practica_5.html)
 * [Patrones de Puntos](./practica_7/practica_7.html)
 
