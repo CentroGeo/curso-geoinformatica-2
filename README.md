@@ -15,7 +15,7 @@ Las primeras prácticas pretenden ser simplemente una introducción a la visuali
 
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
 * [Pesos Espaciales y Rezago Espacial](./04_pesosespaciales/04_pesosespaciales.html)
-* [Autocorrelación Espacial y Análisis Exploratorio de Datos](./practica_5/practica_5.html)
+* [Autocorrelación Espacial y Análisis Exploratorio de Datos](./05_autocorrelacion/05_autocorrelacion.html)
 * [Patrones de Puntos](./practica_7/practica_7.html)
 
 Posteriormente, se analizan problemáticas asociadas al Análisis Espacial, especficamente, particularidades a tomar en cuenta al manejar información espacial:
@@ -48,10 +48,11 @@ Una vez activado el espacio a utilizar, deben de instalarse todas las librerías
 * `scikit-learn`
 * `ipywidgets`
 * `mplleaflet`
+* `mapclassify`
 
 Todas pueden ser instaladas al mismo tiempo a través del comando:
 ```
-conda install jupyter-notebook pandas seaborn matplotlib geopandas pysal palettable numpy scikit-learn ipywidgets mplleaflet
+conda install jupyter-notebook pandas seaborn matplotlib geopandas pysal palettable numpy scikit-learn ipywidgets mplleaflet mapclassify
 ```
 O, si es necesario instalar sólo una de ellas, puede ejecutarse el siguiente comando, sustituyendo `libreria` por el nombre de la librería que se pretende instalar:
 ```
