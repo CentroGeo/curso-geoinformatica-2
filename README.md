@@ -11,7 +11,7 @@ El curso se encuentra organizado como un conjunto de prácticas, cada una puntua
 
 Las primeras prácticas pretenden ser simplemente una introducción a la visualización, interpretación y manipulación de los Datos Espaciales:
 * [Transformación de los Datos](./01_transformacion/01_transformacion.html)
-* [Geovisualización](./practica_2/practica_2.html)
+* [Geovisualización](./02_geovisualizacion/02_geovisualizacion.html)
 
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
 * [Pesos Espaciales y Rezago Espacial](./practica_4/practica_4.html)
@@ -47,10 +47,11 @@ Una vez activado el espacio a utilizar, deben de instalarse todas las librerías
 * `numpy`
 * `scikit-learn`
 * `ipywidgets`
+* `mplleaflet`
 
 Todas pueden ser instaladas al mismo tiempo a través del comando:
 ```
-conda install jupyter-notebook pandas seaborn matplotlib geopandas pysal palettable numpy scikit-learn ipywidgets
+conda install jupyter-notebook pandas seaborn matplotlib geopandas pysal palettable numpy scikit-learn ipywidgets mplleaflet
 ```
 O, si es necesario instalar sólo una de ellas, puede ejecutarse el siguiente comando, sustituyendo `libreria` por el nombre de la librería que se pretende instalar:
 ```
