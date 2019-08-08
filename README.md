@@ -15,11 +15,14 @@ Las primeras prácticas pretenden ser simplemente una introducción a la visuali
 
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
 * [Pesos Espaciales y Rezago Espacial](./04_pesosespaciales/04_pesosespaciales.html)
-* [Autocorrelación Espacial y Análisis Exploratorio de Datos](./05_autocorrelacion/05_autocorrelacion.html)
+* [Autocorrelación Espacial y Análisis Exploratorio de Datos Espaciales (ESDA)](./05_autocorrelacion/05_autocorrelacion.html)
 * [Patrones de Puntos](./07_patrones/07_patrones.html)
 
 Posteriormente, se analizan problemáticas asociadas al Análisis Espacial, especficamente, particularidades a tomar en cuenta al manejar información espacial:
 * [Problema de la Unidad de Área Modificable (MUAP)](./08_muap/08_muap.html)
+
+También se estudian modelos propuestos por diversos especialistas en la materia, y su implementación a través de Python, que resultan de utilidad al momento de abarcar problemáticas en las que se encuentra involucrada la componente espacial:
+* [Difusión Espacial - Modelo de Hägerstrand](./09_difusionespacial/09_intro.html)
 
 ## Preparación para el Curso
 En primer lugar, es necesario tener una computadora actualizada con la versión más reciente de Python. Para el caso de Windows y MacOS, puede ser descargada a través de la [página oficial de *Python*](https://www.python.org/downloads/); en el caso de Linux, basta con correr en la terminal el siguiente comando:
@@ -49,10 +52,12 @@ Una vez activado el espacio a utilizar, deben de instalarse todas las librerías
 * `ipywidgets`
 * `mplleaflet`
 * `mapclassify`
+* `scikit-image`
+* `jsanimation`
 
 Todas pueden ser instaladas al mismo tiempo a través del comando:
 ```
-conda install jupyter-notebook pandas seaborn matplotlib geopandas pysal palettable numpy scikit-learn ipywidgets mplleaflet mapclassify
+conda install jupyter-notebook pandas seaborn matplotlib geopandas pysal palettable numpy scikit-learn ipywidgets mplleaflet mapclassify scikit-image jsanimation
 ```
 O, si es necesario instalar sólo una de ellas, puede ejecutarse el siguiente comando, sustituyendo `libreria` por el nombre de la librería que se pretende instalar:
 ```
