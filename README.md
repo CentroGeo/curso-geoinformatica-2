@@ -15,7 +15,8 @@ Las primeras prácticas pretenden ser simplemente una introducción a la visuali
 
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
 * [Pesos Espaciales y Rezago Espacial](./04_pesosespaciales/04_pesosespaciales.html)
-* [Autocorrelación Espacial y Análisis Exploratorio de Datos Espaciales (ESDA)](./05_autocorrelacion/05_autocorrelacion.html)
+* [Autocorrelación y Análisis Exploratorio de Datos Espaciales (ESDA)](./05_autocorrelacion/05_autocorrelacion.html)
+* [Agrupamiento y Regionalizacíon](./06_regionalizacion/06_intro.html)
 * [Patrones de Puntos](./07_patrones/07_patrones.html)
 
 Posteriormente, se analizan problemáticas asociadas al Análisis Espacial, especficamente, particularidades a tomar en cuenta al manejar información espacial:
