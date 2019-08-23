@@ -51,14 +51,17 @@ Una vez activado el espacio a utilizar, deben de instalarse todas las librerías
 * `numpy`
 * `scikit-learn`
 * `ipywidgets`
-* `mplleaflet`
 * `mapclassify`
 * `scikit-image`
+* `future`
 * `jsanimation`
+* `mplleaflet`
 
-Todas pueden ser instaladas al mismo tiempo a través del comando:
+Todas pueden ser instaladas al mismo tiempo a través de los comandos:
 ```
-conda install jupyter-notebook pandas seaborn matplotlib geopandas pysal palettable numpy scikit-learn ipywidgets mplleaflet mapclassify scikit-image jsanimation
+conda install jupyter pandas seaborn matplotlib geopandas pysal palettable numpy scikit-learn ipywidgets mapclassify scikit-image future
+conda install -c conda-forge jsanimation
+conda install -c ioos mplleaflet
 ```
 O, si es necesario instalar sólo una de ellas, puede ejecutarse el siguiente comando, sustituyendo `libreria` por el nombre de la librería que se pretende instalar:
 ```
