@@ -11,7 +11,7 @@ El curso se encuentra organizado como un conjunto de prácticas, cada una puntua
 
 Las primeras prácticas pretenden ser simplemente una introducción a la visualización, interpretación y manipulación de los Datos Espaciales:
 * [Transformación de los Datos](./01_transformacion/01_transformacion.html)
-* [Geovisualización](./02_geovisualizacion/02_geovisualizacion.ipynb)
+* [Geovisualización](./02_geovisualizacion/02_geovisualizacion.html)
 
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
 * [Pesos Espaciales y Rezago Espacial](./04_pesosespaciales/04_pesosespaciales.html)
