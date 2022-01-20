@@ -10,8 +10,10 @@ Los temas elegidos fueron escogidos a modo de brindar a los estudiantes de un ca
 El curso se encuentra organizado como un conjunto de prácticas, cada una puntualizando en algún aspecto en particular del Análisis Espacial, así como introduciendo las librerías de *Python* que permiten ejecutar dicho análisis. Cada práctica contiene algo de teoría que explica el tema a desarrollar, las líneas de código que permiten desarrollarla y la explicación detrás de cada uno de los comandos.
 
 Las primeras prácticas pretenden ser simplemente una introducción a la visualización, interpretación y manipulación de los Datos Espaciales:
-* [Transformación de los Datos](./01_transformacion/01_transformacion.html)
-* [Geovisualización](./02_geovisualizacion/02_geovisualizacion.html)
+* [Transformación de Datos 1](./01_transformacion/01_transformacion.html)
+* [Transformación de Datos 2](./01_transformacion/02_transformacion.html)
+* [Visualización 1](./02_geovisualizacion/02_visualizacion.html)
+* [Visualización 2: Mapas](./02_geovisualizacion/02_geovisualizacion.html)
 
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
 * [Pesos Espaciales y Rezago Espacial](./04_pesosespaciales/04_pesosespaciales.html)
