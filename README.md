@@ -13,7 +13,7 @@ Las primeras prácticas pretenden ser simplemente una introducción a la visuali
 * [Transformación de Datos 1](./01_transformacion/01_transformacion.html)
 * [Transformación de Datos 2](./01_transformacion/02_transformacion.html)
 * [Visualización 1](./02_geovisualizacion/02_visualizacion.html)
-* [Ejemplo de COVID en niños](./02_geovisualizacion/03_Covid_niños.html)
+* [Ejemplo de COVID por grupos de edad](./02_geovisualizacion/03_Covid_grupos-de-edad.html)
 * [Visualización 2: Mapas](./02_geovisualizacion/02_geovisualizacion.html)
 
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
