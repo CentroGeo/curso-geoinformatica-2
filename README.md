@@ -15,8 +15,8 @@ Las primeras prácticas pretenden ser simplemente una introducción a la visuali
 * [Manejando los datos abiertos de COVID-19](./01_transformacion/01_transformacion.html). Descripción de la besa de datos y su uso básico
 * [Automatizando la transformación de datos](./01_transformacion/02_transformacion.html). Definiendo funciones para automatizar las transformaciones
 * [Ejemplo de COVID por grupos de edad](./02_geovisualizacion/03_Covid_grupos-de-edad.html). Analizando el impacto para diferentes grupos de edad
-* [Introducción a GeoPandas](./02_geovisualizacion/02_visualizacion.html). Elementos básicos para usar objetos geográficos en Python
-* [Mapas de COVID](./02_geovisualizacion/02_geovisualizacion.html)
+* [Introducción a GeoPandas](./02_geovisualizacion/02_geovisualizacion.html). Elementos básicos para usar objetos geográficos en Python
+* [Mapas de COVID](./02_geovisualizacion/02_visualizacion.html)
 
 ### Parte 2. Elementos de Ánálisis Espacial
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
