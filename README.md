@@ -1,14 +1,15 @@
 # [Geoinformática](https://centrogeo.github.io/curso-geoinformatica-2/)
 
-El objetivo del curso es revisar algunos de los conceptos más importantes relacionados con el Análisis Espacial, utilizando las herramientas proporcionadas por el lenguaje de programación *[Python](https://en.wikipedia.org/wiki/Python_(programming_language))* y sus múltiples librerías.
+Este curso es una introducción a las principales herramientas de Python para en Análisis Espacial, está pensado como una primera aproximación y se centra en el uso de las herramientas más que en los conceptos de análisis. ki/Python_(programming_language))* y sus múltiples librerías.
 
-El curso pretende dar a los estudiantes un entendimiento intuitivo de las posibilidades, limitaciones y capacidades de las herramientas geoinformáticas y su aplicación en el Análisis Espacial, sin detallar extensivamente en el transfondo matemático de los métodos estudiados; como tal, aunque resulta ventajoso haber estudiado los principios básicos de matemáticas, estadística y programación antes de iniciar con el curso, éste se encuentra diseñado de forma que no sea necesario ningún tipo de perfil en específico para poder estudiarlo.
+El curso busca dar a los estudiantes un entendimiento intuitivo de las posibilidades, limitaciones y capacidades de las herramientas geoinformáticas y su aplicación en el Análisis Espacial, sin detallar extensivamente en el transfondo matemático de los métodos estudiados. En este sentido, el curso asume que los estudiantes cuentan con nociones básicas de programación y estadística y, preferentemente, de Análisis Espacial.co para poder estudiarlo.
 
-Los temas elegidos fueron escogidos a modo de brindar a los estudiantes de un catálogo extenso, mas no completo, de muchas de las herramientas, tanto tecnológicas como matemáticas, que la Geoinformática aporta al Análisis Espacial, bajo la idea de que, aún si no se conocen todas las técnicas y métodos existentes, los estudiantes adquieran la formación necesaria para entender los conceptos básicos del Análisis Espacial, entender el funcionamiento general de sus procesos y ser capaces de adaptarlos en sus propios proyectos, así como establecer una base sólida para que, en un futuro, los estudiantes investiguen más a profundidad los temas que se relacionen con sus intereses particulares.
+Los temas elegidos fueron escogidos para brindar a los estudiantes de un panorama  amplio, mas no completo, de las herramientas, tanto tecnológicas como matemáticas de la geoinformática. La idea es que, aún si no se conocen todas las técnicas y métodos existentes, los estudiantes adquieran la formación necesaria para entender los conceptos básicos, el funcionamiento general de las herramientas computacionales y sean capaces de adaptarlos a sus propios proyectos. De esta forma el curso busca establecer una base para que, en un futuro, los estudiantes investiguen más a profundidad los temas que se relacionen con sus intereses particulares.
 
 ## Organización del Curso
-El curso se encuentra organizado como un conjunto de prácticas, cada una puntualizando en algún aspecto en particular del Análisis Espacial, así como introduciendo las librerías de *Python* que permiten ejecutar dicho análisis. Cada práctica contiene algo de teoría que explica el tema a desarrollar, las líneas de código que permiten desarrollarla y la explicación detrás de cada uno de los comandos.
+El curso se encuentra organizado como un conjunto de talleres. En cada taller se revisarán algunas ideas detrás del análisis de datos geoespaciales con énfasis en las herramientas y técnicas computacionales. Cada taller es un Notebook de Jupyter que contiene todo el código necesario y las explicaciones básicas. El curso está pensado para funcionar de forma presencial y síncrona, sin embargo también es posible seguir el material de forma autónoma. Además de talleres con ejemplos generales del uso de las herramientas, también hay talleres dedicados a desarrollar ejemplos específicos de análisis para entender problemas reales, estos talleres toman como ejemplo la epidemia de COVID-19 en México.
 
+### Parte 1. Introducción al manejo de datos en Python
 Las primeras prácticas pretenden ser simplemente una introducción a la visualización, interpretación y manipulación de los Datos Espaciales:
 * [Transformación de Datos 1](./01_transformacion/01_transformacion.html)
 * [Transformación de Datos 2](./01_transformacion/02_transformacion.html)
@@ -16,6 +17,7 @@ Las primeras prácticas pretenden ser simplemente una introducción a la visuali
 * [Ejemplo de COVID por grupos de edad](./02_geovisualizacion/03_Covid_grupos-de-edad.html)
 * [Visualización 2: Mapas](./02_geovisualizacion/02_geovisualizacion.html)
 
+### Parte 2. Elementos de Ánálisis Espacial
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
 * [Pesos Espaciales y Rezago Espacial](./04_pesosespaciales/04_pesosespaciales.html)
 * [Autocorrelación y Análisis Exploratorio de Datos Espaciales (ESDA)](./05_autocorrelacion/05_autocorrelacion.html)
