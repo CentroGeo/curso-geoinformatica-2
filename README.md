@@ -11,11 +11,12 @@ El curso se encuentra organizado como un conjunto de talleres. En cada taller se
 
 ### Parte 1. Introducción al manejo de datos en Python
 Las primeras prácticas pretenden ser simplemente una introducción a la visualización, interpretación y manipulación de los Datos Espaciales:
-* [Transformación de Datos 1](./01_transformacion/01_transformacion.html)
-* [Transformación de Datos 2](./01_transformacion/02_transformacion.html)
-* [Visualización 1](./02_geovisualizacion/02_visualizacion.html)
-* [Ejemplo de COVID por grupos de edad](./02_geovisualizacion/03_Covid_grupos-de-edad.html)
-* [Visualización 2: Mapas](./02_geovisualizacion/02_geovisualizacion.html)
+* [Transformación de Datos](./01_transformacion/01_transformacion_original.html). Introducción al manejo de Pandas para transformar datos
+* [Manejando los datos abiertos de COVID-19](./01_transformacion/01_transformacion.html). Descripción de la besa de datos y su uso básico
+* [Automatizando la transformación de datos](./01_transformacion/02_transformacion.html). Definiendo funciones para automatizar las transformaciones
+* [Ejemplo de COVID por grupos de edad](./02_geovisualizacion/03_Covid_grupos-de-edad.html). Analizando el impacto para diferentes grupos de edad
+* [Introducción a GeoPandas](./02_geovisualizacion/02_visualizacion.html). Elementos básicos para usar objetos geográficos en Python
+* [Mapas de COVID](./02_geovisualizacion/02_geovisualizacion.html)
 
 ### Parte 2. Elementos de Ánálisis Espacial
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
