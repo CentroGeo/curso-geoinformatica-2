@@ -1,6 +1,6 @@
 # [Geoinformática](https://centrogeo.github.io/curso-geoinformatica-2/)
 
-Este curso es una introducción a las principales herramientas de Python para en Análisis Espacial, está pensado como una primera aproximación y se centra en el uso de las herramientas más que en los conceptos de análisis. ki/Python_(programming_language))* y sus múltiples librerías.
+Este curso es una introducción a las principales herramientas de Python para en Análisis Espacial, está pensado como una primera aproximación y se centra en el uso de las herramientas más que en los conceptos de análisis.
 
 El curso busca dar a los estudiantes un entendimiento intuitivo de las posibilidades, limitaciones y capacidades de las herramientas geoinformáticas y su aplicación en el Análisis Espacial, sin detallar extensivamente en el transfondo matemático de los métodos estudiados. En este sentido, el curso asume que los estudiantes cuentan con nociones básicas de programación y estadística y, preferentemente, de Análisis Espacial.co para poder estudiarlo.
 
@@ -12,11 +12,12 @@ El curso se encuentra organizado como un conjunto de talleres. En cada taller se
 ### Parte 1. Introducción al manejo de datos en Python
 Las primeras prácticas pretenden ser simplemente una introducción a la visualización, interpretación y manipulación de los Datos Espaciales:
 * [Transformación de Datos](./01_transformacion/01_transformacion_original.html). Introducción al manejo de Pandas para transformar datos
-* [Manejando los datos abiertos de COVID-19](./01_transformacion/01_transformacion.html). Descripción de la besa de datos y su uso básico
+* [Manejando los datos abiertos de COVID-19](./01_transformacion/01_transformacion.html). Descripción de la base de datos y su uso básico
 * [Automatizando la transformación de datos](./01_transformacion/02_transformacion.html). Definiendo funciones para automatizar las transformaciones
+* [Curvas epidémicas](./02_geovisualizacion/02_visualizacion.html). Visualizando la evolución de la epidemia
 * [Ejemplo de COVID por grupos de edad](./02_geovisualizacion/03_Covid_grupos-de-edad.html). Analizando el impacto para diferentes grupos de edad
 * [Introducción a GeoPandas](./02_geovisualizacion/02_geovisualizacion.html). Elementos básicos para usar objetos geográficos en Python
-* [Mapas de COVID](./02_geovisualizacion/02_visualizacion.html)
+* [Mapas de COVID](./02_geovisualizacion/mapas.html)
 
 ### Parte 2. Elementos de Ánálisis Espacial
 El siguiente conjunto de prácticas ahonda en conceptos básicos del Análisis Espacial, principalmente relacionados con conceptos estadísticos y la visualización e interpretación de la información espacial obtenida:
